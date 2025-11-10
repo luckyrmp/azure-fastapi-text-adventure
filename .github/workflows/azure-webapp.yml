@@ -8,7 +8,7 @@ permissions:
   contents: read
 
 env:
-  AZURE_WEBAPP_NAME: lucky-lab-adv   # <--- replace with your actual Web App name
+  AZURE_WEBAPP_NAME: Code2   # <--- replace with your actual Web App namegit add
   PYTHON_VERSION: "3.11"
 
 jobs:
