@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Text Adventure</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>🗝️ Tiny Text Adventure</h1>
+      <div id="game">
+        {% include "partials.html" %}
+      </div>
+      <form id="cmdForm" method="post" action="/action" onsubmit="return sendCmd(event)">
+        <input id="cmd" name="command" placeholder="Type a command (look, north, take key, unlock, restart)">
+        <button type="submit">Go</button>
+      </form>
+      <p class="hint">Try: <code>look</code>, directions like <code>north</code>, <code>take key</code>, <code>unlock</code>, <code>restart</code>.</p>
+    </div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
