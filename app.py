@@ -3,7 +3,7 @@ from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from typing import Dict
-
+import json
 app = FastAPI(title="Text Adventure Starter")
 
 # Mount static and templates
