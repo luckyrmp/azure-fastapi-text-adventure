@@ -8,8 +8,8 @@ permissions:
   contents: read
 
 env:
-  AZURE_WEBAPP_NAME: Code2   # <-- change this
-  PYTHON_VERSION: '3.11'
+  AZURE_WEBAPP_NAME: lucky-lab-adv   # <--- replace with your actual Web App name
+  PYTHON_VERSION: "3.11"
 
 jobs:
   build-and-deploy:
